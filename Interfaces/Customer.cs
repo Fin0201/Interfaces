@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    internal class Customer : Person
+    internal class Customer : IPerson
     {
-        public Customer(string fname, string sname) : base(fname, sname)
-        {
+        public string Fname { get; set; }
+        public string Sname { get; set; }
 
+        public Customer(string fname, string sname)
+        {
+            Fname = fname;
+            Sname = sname;
         }
     }
 }

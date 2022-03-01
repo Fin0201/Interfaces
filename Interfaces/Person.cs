@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    internal abstract class Person
+    internal interface IPerson
     {
         public string Fname { get; set; }
         public string Sname { get; set; }
-        protected Person(string fname, string sname)
-        {
-            Fname = fname;
-            Sname = sname;
-        }
     }
 }
